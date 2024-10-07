@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Task2 {
 
     public static void main(String[] args) {
-        //Вариант 9
+        // Вариант 9
+        // (-1)^(N-1) * x^N/N
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите число X, |X| < 1: ");
@@ -14,10 +15,10 @@ public class Task2 {
         try
         {
             if (Math.abs(Double.parseDouble(X)) >= 1) {
-                throw new NumberFormatException("Модуль Х должен быть меньше единицы");
+                throw new NumberFormatException("Модуль Х должен быть меньше единицы.");
             }
             if (Integer.parseInt(N) <= 0) {
-                throw new NumberFormatException("Число N должно быть больше 0");
+                throw new NumberFormatException("Число N должно быть больше нуля.");
             }
         }
         catch (NumberFormatException e)
