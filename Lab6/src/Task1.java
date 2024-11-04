@@ -166,7 +166,7 @@ class ShapeCalculator {
                 System.out.println("Неверный выбор фигуры.");
                 break;
         }
-        scanner.nextLine();  // consume the newline
+        scanner.nextLine();
     }
 
     private void showResults() {
