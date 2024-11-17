@@ -6,7 +6,7 @@ public class Task3 {
         // Вариант 9
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите число Х: ");
+        System.out.print("Введите число X: ");
         double x = scanner.nextDouble();
 
         System.out.print("Введите число Y: ");
@@ -15,8 +15,22 @@ public class Task3 {
         System.out.print("Введите число Z: ");
         double z = scanner.nextDouble();
 
-        double min = Math.min(Math.min(x, y), z);
-        double max = Math.max(Math.max(x, y), z);
+        double min = x;
+        double max = x;
+
+        if (y < min) {
+            min = y;
+        }
+        if (z < min) {
+            min = z;
+        }
+
+        if (y > max) {
+            max = y;
+        }
+        if (z > max) {
+            max = z;
+        }
 
         System.out.println("Минимальным числом является:\n" + min);
         System.out.println("Максимальным числом является:\n" + max);

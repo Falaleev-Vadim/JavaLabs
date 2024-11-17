@@ -11,15 +11,12 @@ public class Task4 {
         String input = scanner.nextLine();
 
         double radius;
-        try
-        {
+        try {
             radius = Double.parseDouble(input);
             if (radius <= 0) {
                 throw new NumberFormatException("Радиус должен быть больше нуля.");
             }
-        }
-        catch (NumberFormatException e)
-        {
+        } catch (NumberFormatException e) {
             System.out.println("Ошибка: " + e.getMessage());
             return;
         }
