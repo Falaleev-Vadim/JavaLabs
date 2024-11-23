@@ -40,3 +40,4 @@ class Triangle extends Shape implements Resizable {
         }
     }
 }
+

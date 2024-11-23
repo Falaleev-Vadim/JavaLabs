@@ -3,3 +3,4 @@ class ShapeInputException extends Exception {
         super(message);
     }
 }
+

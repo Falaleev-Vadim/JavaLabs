@@ -33,4 +33,3 @@ class ShapeList<T extends Shape> {
         return shapes.remove(index);
     }
 }
-
